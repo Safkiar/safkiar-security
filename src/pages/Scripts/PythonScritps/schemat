@@ -1,0 +1,24 @@
+export default function LinuxCommands() {
+    return (
+        <div class="script_container">
+
+            <div class="introduction">
+
+            </div>
+            <div class="alternative">
+
+                <div class="schema">
+
+                </div>
+
+
+            </div>
+            <pre class="script">
+            </pre>
+
+
+
+
+        </div>
+    );
+}
