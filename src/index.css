@@ -131,3 +131,34 @@ p {
         width: 3rem;
     }
 }
+
+/* system codes */
+
+/* terminal */
+
+.t {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    letter-spacing: 0.08rem;
+    border: 2px solid white;
+}
+
+/* tabela dla 2 */
+
+.tab2 {
+    display: flex;
+    border: 2px solid white;
+    background-color: rgb(197, 196, 195);
+}
+
+.tab2 p:first-child {
+    width: 7rem;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.tab2 p:nth-child(2) {
+    padding-left: 0.5rem;
+        border-left: 1px solid white;
+}

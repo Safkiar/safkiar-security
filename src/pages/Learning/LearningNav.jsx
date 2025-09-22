@@ -9,6 +9,7 @@ export default function LearningNav() {
             <h3>Linux</h3>
             <Link to="aboutlinux">About Linux</Link>
             <Link to="linuxcommands">Linux Commands</Link>
+            <Link to="systemstructure">System Structure</Link>
                 {/* kolejne linki: <NavLink to="nazwa">Nazwa</NavLink> */ }
         </nav >
     );

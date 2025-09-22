@@ -18,6 +18,7 @@ import LinuxCommands from "./pages/Learning/Linux/LinuxCommands";
 import AboutLinux from "./pages/Learning/Linux/AboutLinux";
 import CybersecurityLayout from "./pages/Cybersecurity/CybersecurityLayout";
 import Links from "./pages/Cybersecurity/Useful/Links";
+import SystemStructure from "./pages/Learning/Linux/SystemStructure";
 
 function AppContent() {
   const location = useLocation();
@@ -40,8 +41,9 @@ function AppContent() {
           <Route path="/lab" element={<motion.div {...pageAnimation}><Lab /></motion.div>} />
           <Route path="/learning" element={<motion.div {...pageAnimation}><LearningLayout /></motion.div>} >
             <Route index element={<motion.div {...pageAnimation}><Learning /></motion.div>} />
-                   <Route path="aboutlinux" element={<motion.div {...pageAnimation}><AboutLinux /></motion.div>} />
+            <Route path="aboutlinux" element={<motion.div {...pageAnimation}><AboutLinux /></motion.div>} />
             <Route path="linuxcommands" element={<motion.div {...pageAnimation}><LinuxCommands /></motion.div>} />
+            <Route path="systemstructure" element={<motion.div {...pageAnimation}><SystemStructure /></motion.div>} />
           </Route>
           <Route path="/scripts" element={<motion.div {...pageAnimation}><ScriptsLayout /></motion.div>}>
             <Route index element={<motion.div {...pageAnimation}><Scripts /></motion.div>} />

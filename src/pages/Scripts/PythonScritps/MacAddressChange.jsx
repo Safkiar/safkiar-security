@@ -35,14 +35,11 @@ export default function MacAddressChange() {
             </div>
             <div class="alternative">
                 <h3>Terminal Commands:</h3>
-                <div class="schema">
-                    <p>ifconfig</p>
-                    <p>ifconfig (interface) down</p>
-                    <p>ifconfig (interface) hw ether (mac)</p>
-                    <p>ifconfig ifconfig (interface) up</p>
-                    <p>ifconfig</p>
-
-                </div>
+                    <div className="t">ifconfig</div>
+                    <div className="t">ifconfig (interface) down</div>
+                    <div className="t">ifconfig (interface) hw ether (mac)</div>
+                    <div className="t"> ifconfig (interface) up</div>
+                    <div className="t">ifconfig</div>
                 <h3>List all the interfaces (network card) on the current computer</h3>
                 <p></p>
                 <p>for example:</p>
