@@ -15,6 +15,14 @@ export default function LinuxCommands() {
                 <div className="t">pwd - print working directory</div>
                 <div className="t">ls - lists all the directories</div>
                 <div className="t">ls -l - lists all the directories with properties</div>
+                <div className="t">touch (filename) - create a file</div>
+                <div className="t">mkdir (filename) - create a directory</div>
+                <div className="t">cp (old dir) (new dir) - copy a file</div>
+                <div className="t">cp -R (filename) (from location) (to location) - copy a directory with other files</div>
+                <div className="t">find . -name "(file name)" - szukaj w biężącym kataloru po nazwie</div>
+                <div className="t">find / -name "(file name)" - szukaj w całym systemie po nazwie</div>
+                <div className="t">locate (file name) - szybkie wyszukanie po indeksie  </div>
+                <div className="t">updatedb - aktualizacja tabeli, żeby znależć nowy folder przez locate </div>
                 <h3>shortcuts</h3>
                 <div className="t">ctr + c - get a prompt back</div>
 

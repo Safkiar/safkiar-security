@@ -28,23 +28,90 @@ export default function SystemStructure() {
                 <div className="t">ls - lists all the directories</div>
                 <div className="t">ls -l - lists all the directories with properties</div>
 
+                <h3>Two paths to navigate</h3>
+                <ul>
+                    <li>Absolute Path - always begins with a "/"</li>
+                    <li>Relative Path - relative to current position</li>
+                </ul>
 
                 <h3>Detail information</h3>
 
-                <div className="tab2">
-                <p>Type</p>
-                <p>drwxr-xr-x</p>
+                <div className="tabcontainer">
+
+
+                    <div className="tab2">
+                        <p>Type</p>
+                        <p>drwxr-xr-x</p>
+                    </div>
+                    <p className="tabp">  d for directory, l for link, nothing for text file</p>
+
+                    <div className="tab2">
+
+                        <p># of Links  </p>
+                        <p>
+                            21
+                        </p>
+                    </div>
+                    <p className="tabp">
+
+                        number of hard links to the file
+                    </p>
+
+                    <div className="tab2">
+                        <p>
+                            Owner
+                        </p>
+                        <p> root</p>
+                    </div>
+
+                    <div className="tab2">
+
+                        <p>Group</p>
+                        <p>root</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>Size</p>
+                        <p> 4096</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>
+                            Month
+                        </p>
+                        <p> Feb</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>Day</p>
+                        <p> 27</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>Time</p>
+                        <p> 13:33</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>Name</p>
+                        <p> var</p>
+                    </div>
                 </div>
-                <p>  d for directory, l for link, nothing for text file</p>
-                <p># of Links - 21, number of hard links to the file </p>
-                <p>Owner - root</p>
-                <p>Group - root</p>
-                <p>Size - 4096</p>
-                <p>Month - Feb</p>
-                <p>Day - 27</p>
-                <p>Time - 13:33</p>
-                <p>Name - var</p>
+                <h3>Creating a file or directory</h3>
+                <div className="t">touch (filename) - create a file</div>
+                <div className="t">mkdir (filename) - create a directory</div>
+                <h3>Copy a file or directory</h3>
+                <div className="t">cp (old dir) (new dir) - copy a file</div>
+                <div className="t">cp -R (filename) (from location) (to location) - copy a directory with other files</div>
+                <h3>Find file or directory</h3>
+                <div className="t">find . -name "(file name)" - szukaj w biężącym kataloru po nazwie</div>
+                <div className="t">find / -name "(file name)" - szukaj w całym systemie po nazwie</div>
+                <div className="t">locate (file name) - szybkie wyszukanie po indeksie  </div>
+                <div className="t">updatedb - aktualizacja tabeli, żeby znależć nowy folder przez locate </div>
+             
+
             </div>
+
             <div class="alternative">
 
                 <div class="schema">

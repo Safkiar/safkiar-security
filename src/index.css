@@ -146,6 +146,16 @@ p {
 
 /* tabela dla 2 */
 
+.tabcontainer {
+    border: 2px solid white;
+    width: 20rem;
+}
+
+.tabp {
+    padding: 2px 5px;
+}
+
+
 .tab2 {
     display: flex;
     border: 2px solid white;
@@ -153,12 +163,14 @@ p {
 }
 
 .tab2 p:first-child {
-    width: 7rem;
-    border-right: 1px solid white;
+    width: 10rem;
     text-align: center;
+    border-right: 1px solid white;
+
 }
 
 .tab2 p:nth-child(2) {
-    padding-left: 0.5rem;
-        border-left: 1px solid white;
+    width: 10rem;
+    text-align: center;
+    border-left: 1px solid white;
 }
