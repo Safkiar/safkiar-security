@@ -24,6 +24,16 @@ export default function LinuxCommands() {
                 <h4>How to change password?</h4>
                 <div className="t">passwd - change current user password</div>
                 <div className="t">passwd (userid) - change selected user password</div>
+                <h3>WildCards</h3>
+                <p>character that can be used as a substitute for any of a class of characters in search</p>
+                <ul>
+                    <li>* - zero or more char</li>
+                    <li>? - single char</li>
+                    <li>{} - range of char</li>
+                </ul>
+                <div className="t">touch (filename){"{1..9}"}(filename) - create 9 files</div>
+                <div className="t">rm *xy* - remove files with xy</div>
+             
             </div>
             <div class="alternative">
 

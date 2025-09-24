@@ -108,8 +108,62 @@ export default function SystemStructure() {
                 <div className="t">find / -name "(file name)" - szukaj w całym systemie po nazwie</div>
                 <div className="t">locate (file name) - szybkie wyszukanie po indeksie  </div>
                 <div className="t">updatedb - aktualizacja tabeli, żeby znależć nowy folder przez locate </div>
-             
 
+                <h3>Linux File Types</h3>
+                   <div className="tabcontainer">
+
+
+                    <div className="tab2">
+                        <p>-</p>
+                        <p>Regular file</p>
+                    </div>
+                    <div className="tab2">
+
+                        <p>d </p>
+                        <p>
+                            Directory
+                        </p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>
+                            l
+                        </p>
+                        <p> Link</p>
+                    </div>
+
+                    <div className="tab2">
+
+                        <p>c</p>
+                        <p>Special/Device file</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>s</p>
+                        <p>Socket</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>
+                            p
+                        </p>
+                        <p> Named pipe</p>
+                    </div>
+
+                    <div className="tab2">
+                        <p>b</p>
+                        <p> Block device</p>
+                    </div>
+
+            
+                </div>
+
+                <h3>Soft and Hard Links</h3>
+                <p>Inode - Pointer or number of a file on the hard disk</p>
+                <p>Soft Link - Link will be removed if file is removed or renamed</p>
+                <p>Hard Link - Deleting, renaming, original file will not affect the hard link</p>
+                <p>*You cannot create soft or hard link within the same directory with the same name</p>
+            <div className="t">ln -s (source) (target)  - create a soft link </div>
             </div>
 
             <div class="alternative">
