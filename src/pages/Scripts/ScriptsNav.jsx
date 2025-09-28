@@ -7,6 +7,7 @@ export default function ScriptsNav() {
 
       <Link to="." >All Scripts</Link>
       <Link to="macaddresschange">MAC Address Change</Link>
+          <Link to="networkscanner">Network Scanner</Link>
       {/* kolejne linki: <NavLink to="nazwa">Nazwa</NavLink> */}
     </nav>
   );

@@ -19,6 +19,7 @@ import AboutLinux from "./pages/Learning/Linux/AboutLinux";
 import CybersecurityLayout from "./pages/Cybersecurity/CybersecurityLayout";
 import Links from "./pages/Cybersecurity/Useful/Links";
 import SystemStructure from "./pages/Learning/Linux/SystemStructure";
+import NetworkScanner from "./pages/Scripts/PythonScritps/NetworkScanner";
 
 function AppContent() {
   const location = useLocation();
@@ -30,27 +31,31 @@ function AppContent() {
     <>
       <Nav />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<motion.div {...pageAnimation}><Homepage /></motion.div>} />
-          <Route path="/contact" element={<motion.div {...pageAnimation}><Contact /></motion.div>} />
-          <Route path="/cybersecurity" element={<motion.div {...pageAnimation}><CybersecurityLayout /></motion.div>} >
-            <Route index element={<motion.div {...pageAnimation}><Cybersecurity /></motion.div>} />
-            <Route path="links" element={<motion.div {...pageAnimation}><Links /></motion.div>} />
-          </Route>
-          <Route path="/experience" element={<motion.div {...pageAnimation}><Experience /></motion.div>} />
-          <Route path="/lab" element={<motion.div {...pageAnimation}><Lab /></motion.div>} />
-          <Route path="/learning" element={<motion.div {...pageAnimation}><LearningLayout /></motion.div>} >
-            <Route index element={<motion.div {...pageAnimation}><Learning /></motion.div>} />
-            <Route path="aboutlinux" element={<motion.div {...pageAnimation}><AboutLinux /></motion.div>} />
-            <Route path="linuxcommands" element={<motion.div {...pageAnimation}><LinuxCommands /></motion.div>} />
-            <Route path="systemstructure" element={<motion.div {...pageAnimation}><SystemStructure /></motion.div>} />
-          </Route>
-          <Route path="/scripts" element={<motion.div {...pageAnimation}><ScriptsLayout /></motion.div>}>
-            <Route index element={<motion.div {...pageAnimation}><Scripts /></motion.div>} />
-            <Route path="macaddresschange" element={<motion.div {...pageAnimation}><MacAddressChange /></motion.div>} />
-          </Route>
-          <Route path="*" element={<motion.div {...pageAnimation}>404 – Not found</motion.div>} />
-        </Routes>
+<Routes location={location} key={location.pathname}>
+  <Route path="/" element={<motion.div {...pageAnimation}><Homepage/></motion.div>} />
+  <Route path="/contact" element={<motion.div {...pageAnimation}><Contact/></motion.div>} />
+
+  {/* layouty bez motion.div */}
+  <Route path="/cybersecurity" element={<CybersecurityLayout/>}>
+    <Route index element={<Cybersecurity/>} />
+    <Route path="links" element={<Links/>} />
+  </Route>
+
+  <Route path="/learning" element={<LearningLayout/>}>
+    <Route index element={<Learning/>} />
+    <Route path="aboutlinux" element={<AboutLinux/>} />
+    <Route path="linuxcommands" element={<LinuxCommands/>} />
+    <Route path="systemstructure" element={<SystemStructure/>} />
+  </Route>
+
+  <Route path="/scripts" element={<ScriptsLayout/>}>
+    <Route index element={<Scripts/>} />
+    <Route path="macaddresschange" element={<MacAddressChange/>} />
+    <Route path="networkscanner" element={<NetworkScanner/>} />
+  </Route>
+
+  <Route path="*" element={<motion.div {...pageAnimation}>404 – Not found</motion.div>} />
+</Routes>
       </AnimatePresence>
     </>
   );

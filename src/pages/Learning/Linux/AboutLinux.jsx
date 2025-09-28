@@ -29,11 +29,13 @@ export default function LinuxCommands() {
                 <ul>
                     <li>* - zero or more char</li>
                     <li>? - single char</li>
-                    <li>{} - range of char</li>
+                    <li>{ } - range of char</li>
                 </ul>
                 <div className="t">touch (filename){"{1..9}"}(filename) - create 9 files</div>
                 <div className="t">rm *xy* - remove files with xy</div>
-             
+        
+
+
             </div>
             <div class="alternative">
 

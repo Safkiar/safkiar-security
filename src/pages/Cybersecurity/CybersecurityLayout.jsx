@@ -1,20 +1,34 @@
 // src/pages/Scripts/ScriptsLayout.jsx
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation} from "react-router-dom";
 import "./Cybersecurity.css";
 import CybersecurityNav from "./CybersecurityNav";
+import { AnimatePresence, motion } from "framer-motion";
+import contentAnim from "../../settings/navigation/navigation";
 
 export default function CybersecurityLayout() {
+      const location = useLocation();
     return (
         <div className="basic-site-layout">
 
 
             <div className="side-navbar">
                 <h1>Cybersecurity</h1>
-                <CybersecurityNav />      {/* menu WIDOCZNE tylko w sekcji /scripts */}
+                <CybersecurityNav />      
 
             </div>
             <div className="site-content">
-                <Outlet />        {/* tu zmienia się zawartość podstron /scripts/... */}
+                       <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={contentAnim.transition}
+            variants={contentAnim}
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
             </div>
         </div>
     );

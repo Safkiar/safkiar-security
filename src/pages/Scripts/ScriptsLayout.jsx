@@ -1,20 +1,34 @@
 // src/pages/Scripts/ScriptsLayout.jsx
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import ScriptsNav from "./ScriptsNav";
+import { AnimatePresence, motion } from "framer-motion";
 import "./Scripts.css";
+import contentAnim from "../../settings/navigation/navigation";
 
 export default function ScriptsLayout() {
-    return (
-        <div className="basic-site-layout">
+  const location = useLocation();
 
-            <div className="side-navbar">
-                <h1>Scripts</h1>
-                <ScriptsNav />      {/* menu WIDOCZNE tylko w sekcji /scripts */}
+  return (
+    <div className="basic-site-layout">
+      <div className="side-navbar">
+        <h1>Scripts</h1>
+        <ScriptsNav />
+      </div>
 
-            </div>
-            <div className="site-content">
-                <Outlet />        {/* tu zmienia się zawartość podstron /scripts/... */}
-            </div>
-        </div>
-    );
+      <div className="site-content">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.pathname}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={contentAnim.transition}
+            variants={contentAnim}
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 }
