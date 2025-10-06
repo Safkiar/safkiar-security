@@ -33,7 +33,79 @@ export default function LinuxCommands() {
                 </ul>
                 <div className="t">touch (filename){"{1..9}"}(filename) - create 9 files</div>
                 <div className="t">rm *xy* - remove files with xy</div>
-        
+                <h4>Help commands</h4>
+                <div className="t">whatis (command) - help command</div>
+                <div className="t">(command) --help - help command</div>
+                <div className="t">man (command) - help command</div>
+
+                <h4>Adding text fo files</h4>
+                <p>VI</p>
+                <p>redirect command output {'>'} or {'>>'}</p>
+                <p>echo {'>'} or {'>>'}</p>
+                <p> {'>'} - overwrite </p>
+                <p>{'>>'} - add txt</p>
+
+                <div className="t">echo (txt) {'>'} (filename) - write in file</div>
+                <div className="t">cat (filename) - read file</div>
+
+                <h4>3 redirects in Linux</h4>
+                <p>stdin - standard input - 0</p>
+                <p>stdout - standard output - 1</p>
+                <p>stderr - standard error - 2</p>
+
+                <div className="t">(command) {'>'} (filename) - save output in file</div>
+                <div className="t">(command) {'>>'} (filename) - save additional output in file</div>
+
+                <h4>tee</h4>
+                <div className="t">(command) | tee (filename) (filename2) - run a command for multiple files </div>
+                <h4>
+                    pipe is used by shell to connect the outpot of command directly to input of another command
+                </h4>
+                <div className="t">(command1) | (command2)</div>
+                <h4>execute multiple commands</h4>
+                <div className="t">(command1) ; (command2) - execute multiple commands</div>
+                <h4>File maintaenace commands</h4>
+
+                <div className="t"> cp (file_source) (file_destination) - copy files and directories</div>
+                <div className="t"> rm (file) - remove file</div>
+                <div className="t"> mv (file) (new_file_name) - change file name</div>
+                <div className="t"> mv (file) (/location) - change location of file</div>
+
+                <div className="t"> mkdirrmdir (file) - create a dir</div>
+                <div className="t"> rm -r (file/) - remove a dir</div>
+
+                <div className="t"> rm -Rf (file/) - remove a dir with content forcefully</div>
+
+                <div className="t"> chgr (group) (file) - change ownership of file</div>
+
+                <div className="t"> chown (owner) (file) - change owner of a file </div>
+
+                <h4>File Display Commands</h4>
+
+                <div className="t"> cat (file) - show content of the file </div>
+                <div className="t"> more (file) - show content in percentages  </div>
+                <div className="t"> less (file) - show one line at the time </div>
+                <div className="t"> head (-num) (files) - show numer of specified lines from start </div>
+                <div className="t"> tail (-num) (files) - show number of specified lines from end </div>
+
+                <h4>Text processors Commands</h4>
+                <div className="t"> cut </div>
+                <div className="t"> awk </div>
+                <div className="t"> grep </div>
+                <div className="t"> egrep </div>
+                <div className="t"> sort </div>
+                <div className="t"> uniq </div>
+                <div className="t"> wc </div>
+
+
+
+
+
+
+
+
+
+
 
 
             </div>
