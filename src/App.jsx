@@ -20,6 +20,7 @@ import CybersecurityLayout from "./pages/Cybersecurity/CybersecurityLayout";
 import Links from "./pages/Cybersecurity/Useful/Links";
 import SystemStructure from "./pages/Learning/Linux/SystemStructure";
 import NetworkScanner from "./pages/Scripts/PythonScritps/NetworkScanner";
+import Math from "./pages/Learning/Math/math";
 
 function AppContent() {
   const location = useLocation();
@@ -46,6 +47,8 @@ function AppContent() {
     <Route path="aboutlinux" element={<AboutLinux/>} />
     <Route path="linuxcommands" element={<LinuxCommands/>} />
     <Route path="systemstructure" element={<SystemStructure/>} />
+    {/* math */}
+        <Route path="math" element={<Math/>} />
   </Route>
 
   <Route path="/scripts" element={<ScriptsLayout/>}>

@@ -85,6 +85,7 @@ sin     0      -        -1      -       0     +     1       +      0
 kąt                     sin             cos 
 π/6 - 30 (mały)         1/2             V3/2
 π/4 - 45 (średni)       V2/2            V2/2
+π/3 - 60 (duży)         V3/2            1/2
 
 sin(α + β) = sin α * cos β + cos α * sin β
 cos(α + β) = cos α * cos β - sin α * sin β
@@ -101,9 +102,46 @@ b = |z| sin α
 cos α = a/|z| 
 sin α = b/|z|
 
+cos(-0) = cos 0
+cos(-0) = - sin 0
+
 biegunowe trygonometryczne zapisy liczb zespolonych z i w. 
 |zw| - moduł iloczynu 
 |zw| (cos(α + β) + isin(α + β))
+
+Wzór de Moivre:
+(|z|(cos α + i sin α))^k = |z|^k (cos(kα) + isin(kα))
+
+Przykład 1 - i:
+moduł: |1 - i| = V1^2+(-1)^2 = V2
+kąt: cos α 1/v2 = v2/2, sin α -1/v2 = -v2/2 
+
+!cosinus nie zmienia znaku przy minusie kąta 
+!sinus zmienia znak przy minusie kąta 
+Pozbywanie się pełnych obrotów: 2π - nie zmienia wartości sin i cos 
+
+(l-i)^33 = (V2 (cos (-π/4) + isin(-π/4))^33=
+(v2)^33(cos(-33π/4) + isin(-33π/4)) = (v2)^33(cos(-32π/4 - π/4 ) + isin(-32π/4 - π/4 ))=
+(v2)^33(cos(-π/4) + isin(-π/4))=
+(v2)^33(v2/2 -iv2/2)= (v2)^33 * v2/2(1 - i) =
+(2^1/2)^33 * 2^1/2 /2 = 2^33/2 * 2^1/2 * 2^-1 (1 - i) = 2^33/2 * 2^-1/2(1 - i) = 2^32/2(1 - i) = 
+2^16(1 - i) = 2^16 - 2^16i
+
+Reguły potęg:
+Va = a^1/2
+a^m/n = 3vam 
+(a^p)^q = a^pq
+a^p * a^q = a^p+q 
+a^-k = 1/a^k 
+
+ V16 = 16^1/2 
+ 8^5/3 = (3V8)^5
+(2^3)^4 = 2^12
+5^2 * 5^3 = 5^5
+10^-3 = 1/10^3
+
+ 
+
 
 Potęgowanie liczb zespolonych:
 (2−i)3=(2−i)2(2−i)=(3−4i)(2−i)=6−11i−4=2−11i

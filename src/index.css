@@ -174,3 +174,54 @@ p {
     text-align: center;
     border-left: 1px solid white;
 }
+
+
+/* math */
+
+.angle-grid {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(3rem, auto));
+    /* kąt + 9 pozycji */
+    gap: 8px;
+    margin: 8px 0 0;
+}
+
+.special-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* kąt | sin | cos */
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.cell {
+    border: 2px solid red;
+    /* każdy element ma obramowanie */
+    border-radius: 8px;
+    padding: 6px 10px;
+    text-align: center;
+    line-height: 1.35;
+    background: #fffaf3;
+    /* opcjonalnie */
+}
+
+.quad-grid{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(3.2rem, auto)); /* pusty nagłówek + I..IV */
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.phi-grid{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(3.6rem, auto)); /* Ćwiartka + 4 kolumny */
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.spec-grid-5{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(3.2rem, auto)); /* kąt/rad + 5 kątów */
+  gap: 8px;
+  margin-top: 8px;
+}
